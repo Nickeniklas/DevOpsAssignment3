@@ -12,16 +12,17 @@ public class App {
     	
     	System.out.println("Search for a persons friends list(try juha or elias): ");
     	String userInput = input.nextLine(); 
-         String[] friends = getFriendNames(userInput);
+         String[] friends = getFriendsList(userInput);
          
-         // Print the friends' names
+         // Print friends list
          for (String friend : friends) {
              System.out.println(friend);
          }
      }
 
-     public static String[] getFriendNames(String name) {
-    	 System.out.println(name);
+     public static String[] getFriendsList(String name) {
+    	 System.out.println(name + "s Friendslist:");
+    	 
     	 String[] juhaFriends = {
     	            "Kalle", "Ville", "Jukka", "Spurgu", 
     	            "Ukko", "Pelle", "Matti", "Sami", 
